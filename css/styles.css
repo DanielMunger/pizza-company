@@ -15,10 +15,14 @@ body{
 .head-picture img{
   border:5px solid black;
 }
-button{
+.btn{
   text-align: center;
+  border: 2px solid black;
 }
 #order{
 
+  display: none;
+}
+.delivery{
   display: none;
 }

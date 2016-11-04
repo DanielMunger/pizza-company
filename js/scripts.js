@@ -32,9 +32,15 @@ $(document).ready(function() {
   var veggieToppings = [];
   var meatToppings = [];
   var house;
+  var city;
+  var street;
+  var state;
   $(".house").click(function(){
     house = $(".house").val();
    });
+  $("#deliver").click(function() {
+    $(".delivery").show();
+  });
   $("form#create").submit(function(event){
 
     event.preventDefault();
@@ -49,12 +55,20 @@ $(document).ready(function() {
     });
     var newPizza = new Pizza(pizzasize, crusttype, house, veggieToppings, meatToppings)
     var orderTotal = newPizza.calculatePrice();
-    $("#order").show();
-    $("#list-order").append("<li>" + pizzasize + ' ' + crusttype + "</li>");
-    $("#list-order").append("<li>" + 'with ' + veggieToppings + meatToppings + "</li>");
-    $("#list-order").append("<li>" + '$' + orderTotal + "</li>");
+    $("#order").slideDown();
+    $("#list-order").append("A " + pizzasize + " " + crusttype + " pizza with " + veggieToppings + meatToppings + ". Your order total is: $" + orderTotal + ".");
     veggieToppings = [];
     meatToppings = [];
+  });
+  $("#pizza-delivery").click(function() {
+    street = $("input.new-street").val();
+    city = $("input.new-city").val();
+    state = $("input.new-state").val();
+
+
+  });
+  $("#send-pizza").click(function() {
+    $("#delivery-location").append("Your Order will be delivered to " + street + " " + city + " " + state + ".");
   });
 
 });

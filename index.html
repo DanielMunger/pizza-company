@@ -21,26 +21,26 @@
       <h3>Specialty Pizzas</h3>
       <form id="house">
         <div class="row">
-          <div class="col-md-4"><button type="button" class="btn btn-default btn-lg house" value="specialty">The Tarantino</button>
+          <div class="col-md-4"><button type="button" class="btn btn-primary btn-lg house" value="specialty">The Tarantino</button>
             <p>Red Sauce, Spicy Italian Sausage, Green Peppers, Crushed Garlic<br>$15/18</p>
           </div>
-          <div class="col-md-4"><button type="button" class="btn btn-default btn-lg house" value="specialty">White Walker</button>
+          <div class="col-md-4"><button type="button" class="btn btn-primary btn-lg house" value="specialty">White Walker</button>
           </p>White Garlic Sauce, Spinach, Roasted Feta, Carmelized Onions,
           and a light dusting of Herbs and Spices.<br>$15/18</p>
           </div>
-          <div class="col-md-4"><button type="button" class="btn btn-default btn-lg house" value="specialty">Crowd Pleaser</button>
+          <div class="col-md-4"><button type="button" class="btn btn-primary btn-lg house" value="specialty">Crowd Pleaser</button>
             <p>Red Sauce, Aged Pepperoni, Local Mushrooms, Crushed Garlic,
             Jalepeños, and Sundried Tomatoes.<br>$15/18</p>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-4"><button type="button" class="btn btn-default btn-lg house" value="specialty">Under the Bridge</button>
+          <div class="col-md-4"><button type="button" class="btn btn-primary btn-lg house" value="specialty">Under the Bridge</button>
             <p>Pesto Sauce, Smoked Mushrooms, Fresh Mozzerella, Basil, Olive Oil<br>$15/18</p>
           </div>
-          <div class="col-md-4"><button type="button" class="btn btn-default btn-lg house" value="specialty">Skies on Fire</button>
+          <div class="col-md-4"><button type="button" class="btn btn-primary btn-lg house" value="specialty">Skies on Fire</button>
           </p>White Garlic Sauce, Jalepeños, Chorizo, Pepperoni, Green Peppers.<br>$15/18</p>
           </div>
-          <div class="col-md-4"><button type="button" class="btn btn-default btn-lg house" value="specialty">Queen of Spades</button>
+          <div class="col-md-4"><button type="button" class="btn btn-primary btn-lg house" value="specialty">Queen of Spades</button>
             <p>Canadian Bacon, House Sausage, Spinach, Smoked Mushrooms<br>$15/18</p>
           </div>
         </div>
@@ -137,15 +137,37 @@
               Pepperoncinis
             </label>
           </div>
-          <div class="col-md-4">
-          </div>
         </div>
         <button type="submit" class="btn btn-primary">Toss the Dough!</button>
       </form>
+      <button type="submit" class="btn btn-primary" id="deliver">Delivery!!</button>
+
+      <form class="delivery" id="pizza-delivery">
+        <div class="form-group">
+          <label for="new-street">Street</label>
+          <input type="text" class="form-control new-street">
+        </div>
+        <div class="form-group">
+          <label for="new-city">City</label>
+          <input type="text" class="form-control new-city">
+        </div>
+        <div class="form-group">
+          <label for="new-state">State</label>
+          <input type="text" class="form-control new-state">
+        </div>
+        <button type="button" id="send-pizza" class="btn btn-primary">Send my Pizza!</button>
+      </form>
+    </div>
       <div class="well" id="order">
         <h4>Here is your Order:</h4>
         <ul id="list-order">
         </ul>
+        <ul id="delivery-location">
+
+        <ul>
+      </div>
+      <div>
+        <br><br><br><br><br><br>
       </div>
     </div>
   </body>
