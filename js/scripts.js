@@ -1,3 +1,5 @@
+//Back End
+
 function Pizza(pizzasize, crusttype, house, veggieToppings, meatToppings){
   this.pizzasize = pizzasize;
   this.crusttype = crusttype;
@@ -27,7 +29,7 @@ Pizza.prototype.calculatePrice = function(){
   this.price = 0
 }
 
-
+//Front-End
 $(document).ready(function() {
   var veggieToppings = [];
   var meatToppings = [];
