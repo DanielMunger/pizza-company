@@ -1,0 +1,24 @@
+body{
+  font-family: 'Open Sans Condensed', sans-serif;
+  background-color: lightgrey;
+}
+.jumbotron{
+  background-color: black;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px red;
+}
+.head-picture{
+  text-align: center;
+  /*border: 5px solid black; */
+}
+.head-picture img{
+  border:5px solid black;
+}
+button{
+  text-align: center;
+}
+#order{
+
+  display: none;
+}

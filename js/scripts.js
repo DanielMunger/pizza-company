@@ -49,8 +49,10 @@ $(document).ready(function() {
     });
     var newPizza = new Pizza(pizzasize, crusttype, house, veggieToppings, meatToppings)
     var orderTotal = newPizza.calculatePrice();
-
-    console.log(orderTotal);
+    $("#order").show();
+    $("#list-order").append("<li>" + pizzasize + ' ' + crusttype + "</li>");
+    $("#list-order").append("<li>" + 'with ' + veggieToppings + meatToppings + "</li>");
+    $("#list-order").append("<li>" + '$' + orderTotal + "</li>");
     veggieToppings = [];
     meatToppings = [];
   });

@@ -2,7 +2,8 @@
 <html>
   <head>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
     <script src="js/jquery-3.1.1.js"></script>
     <script src="js/scripts.js"></script>
     <meta charset="utf-8">
@@ -21,52 +22,28 @@
       <form id="house">
         <div class="row">
           <div class="col-md-4"><button type="button" class="btn btn-default btn-lg house" value="specialty">The Tarantino</button>
-            <p>Red Sauce, Spicy Italian Sausage, Green Peppers, *****
-
-
-            $15/18</p>
+            <p>Red Sauce, Spicy Italian Sausage, Green Peppers, Crushed Garlic<br>$15/18</p>
           </div>
           <div class="col-md-4"><button type="button" class="btn btn-default btn-lg house" value="specialty">White Walker</button>
           </p>White Garlic Sauce, Spinach, Roasted Feta, Carmelized Onions,
-          and a light dusting of Herbs and Spices.
-
-
-          $15/18</p>
+          and a light dusting of Herbs and Spices.<br>$15/18</p>
           </div>
           <div class="col-md-4"><button type="button" class="btn btn-default btn-lg house" value="specialty">Crowd Pleaser</button>
             <p>Red Sauce, Aged Pepperoni, Local Mushrooms, Crushed Garlic,
-            Jalepeños, and Sundried Tomatoes.
-
-
-            $15/18</p>
+            Jalepeños, and Sundried Tomatoes.<br>$15/18</p>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-4"><button type="button" class="btn btn-default btn-lg house" value="specialty">The Tarantino</button>
-            <p>Red Sauce, Spicy Italian Sausage, Green Peppers, *****
-
-
-            $15/18</p>
+          <div class="col-md-4"><button type="button" class="btn btn-default btn-lg house" value="specialty">Under the Bridge</button>
+            <p>Pesto Sauce, Smoked Mushrooms, Fresh Mozzerella, Basil, Olive Oil<br>$15/18</p>
           </div>
-
-          <div class="col-md-4"><button type="button" class="btn btn-default btn-lg house" value="specialty">White Walker</button>
-          </p>White Garlic Sauce, Spinach, Roasted Feta, Carmelized Onions,
-          and a light dusting of Herbs and Spices.
-
-          $15/18</p>
+          <div class="col-md-4"><button type="button" class="btn btn-default btn-lg house" value="specialty">Skies on Fire</button>
+          </p>White Garlic Sauce, Jalepeños, Chorizo, Pepperoni, Green Peppers.<br>$15/18</p>
           </div>
-          <div class="col-md-4"><button type="button" class="btn btn-default btn-lg house" value="specialty">Crowd Pleaser</button>
-            <p>Red Sauce, Aged Pepperoni, Local Mushrooms, Crushed Garlic,
-            Jalepeños, and Sundried Tomatoes.
-
-            $15/18</p>
+          <div class="col-md-4"><button type="button" class="btn btn-default btn-lg house" value="specialty">Queen of Spades</button>
+            <p>Canadian Bacon, House Sausage, Spinach, Smoked Mushrooms<br>$15/18</p>
           </div>
         </div>
-        <!-- <select class="form-control" id="size">
-          <option value="select">Please Select your Hunger Level</option>
-          <option value="regular">Regular 12" Pizza</option>
-          <option value="large">Large 18"</option>
-        </select> -->
       </form>
       <h3>Or Create Your Own!!</h3>
       <form id="create">
@@ -74,7 +51,7 @@
           <div class="col-md-6">
             <h4>Dough Type</h4>
             <select class="form-control" id="type">
-              <option value="select">Please Select your Dough</option>
+              <option value="">Please Select your Dough</option>
               <option value="wheat">Whole Wheat</option>
               <option value="gluten-free">Gluten Free</option>
             </select>
@@ -82,7 +59,7 @@
           <div class="col-md-6">
             <h4>Pizza Size</h4>
             <select class="form-control" id="size">
-              <option value="select">Please Select your Hunger Level</option>
+              <option value="">Please Select your Hunger Level</option>
               <option value="regular">Regular 12" Pizza</option>
               <option value="large">Large 18"</option>
             </select>
@@ -93,70 +70,70 @@
           <div class="col-md-4">
             <h4>Protien</h4>
             <label>
-              <input type="checkbox" name="meatToppings" value="meatToppings">
+              <input type="checkbox" name="meatToppings" value="House-Sausage">
               House Sausage
             </label>
             <label>
-              <input type="checkbox" name="meatToppings" value="meatToppings">
+              <input type="checkbox" name="meatToppings" value="Pepperoni">
               Pepperoni
             </label>
             <label>
-              <input type="checkbox" name="meatToppings" value="meatToppings">
+              <input type="checkbox" name="meatToppings" value="Chorizo">
               Chorizo
             </label>
             <label>
-              <input type="checkbox" name="meatToppings" value="meatToppings">
+              <input type="checkbox" name="meatToppings" value="Spicy Italian Sausage">
               Spicy Italian Sausage
             </label>
             <label>
-              <input type="checkbox" name="meatToppings" value="meatToppings">
+              <input type="checkbox" name="meatToppings" value="Salami">
               Salami
             </label><br>
             <label>
-              <input type="checkbox" name="meatToppings" value="meatToppings">
+              <input type="checkbox" name="meatToppings" value="Canadian Bacon">
               Canadian Bacon
             </label>
             <label>
-              <input type="checkbox" name="meatToppings" value="meatToppings">
+              <input type="checkbox" name="meatToppings" value="Steak">
               Steak
             </label>
             <label>
-              <input type="checkbox" name="meatToppings" value="meatToppings">
+              <input type="checkbox" name="meatToppings" value="Anchovies">
               Anchovies
             </label>
           </div>
           <div class="col-md-4">
             <h4>Veggies</h4>
             <label>
-              <input type="checkbox" name="veggieToppings" value="veggieToppings">
+              <input type="checkbox" name="veggieToppings" value="Mushrooms">
               Mushrooms
             </label>
             <label>
-              <input type="checkbox" name="veggieToppings" value="veggieToppings">
+              <input type="checkbox" name="veggieToppings" value="Green Peppers">
               Green Peppers
             </label>
             <label>
-              <input type="checkbox" name="veggieToppings" value="veggieToppings">
+              <input type="checkbox" name="veggieToppings" value="Onions">
               Onions
             </label>
             <label>
-              <input type="checkbox" name="veggieToppings" value="veggieToppings">
+              <input type="checkbox" name="veggieToppings" value="Fresh Basil">
               Fresh Basil
             </label>
             <label>
-              <input type="checkbox" name="veggieToppings" value="veggieToppings">
+              <input type="checkbox" name="veggieToppings" value="Tomatoes">
               Tomatoes
             </label>
             <label>
-              <input type="checkbox" name="veggieToppings" value="veggieToppings">
+              <input type="checkbox" name="veggieToppings" value="Spinach">
               Spinach
             </label><br>
             <label>
-              <input type="checkbox" name="veggieToppings" value="veggieToppings">
+              <input type="checkbox" name="veggieToppings" value="Jalepeños">
               Jalepeños
             </label>
             <label>
-              <input type="checkbox" name="veggieToppings" value="veggieToppings">
+              <input type="checkbox" name="veggieToppings" value="Pepperoncinis">
               Pepperoncinis
             </label>
           </div>
@@ -165,6 +142,11 @@
         </div>
         <button type="submit" class="btn btn-primary">Toss the Dough!</button>
       </form>
+      <div class="well" id="order">
+        <h4>Here is your Order:</h4>
+        <ul id="list-order">
+        </ul>
+      </div>
     </div>
   </body>
 </html>
