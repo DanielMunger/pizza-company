@@ -1,32 +1,58 @@
-function Pizza(size, type, specialty){
-  this.size = size;
-  this.type = type;
-  this.specialty = specialty;
-  this.meatToppings = [];
-  this.veggieToppings = [];
-  this.price = 0;
+function Pizza(pizzasize, crusttype, house, veggieToppings, meatToppings){
+  this.pizzasize = pizzasize;
+  this.crusttype = crusttype;
+  this.house = house;
+  this.meatToppings = meatToppings;
+  this.veggieToppings = veggieToppings;
+  this.price = 12;
 }
 
-Pizza.prototype.calculatePrice{
-  if(this.size === "regular"){
-    this.price += 12;
-  }else if(this.size === "large"){
-    this.price += 15;
-  }else if(this.type === "gluten-free"){
-    this.price += 3;
-  }else if(this.specialty){
-    this.price += 3;
-  }
+Pizza.prototype.calculatePrice = function(){
   for(i=0; i<this.veggieToppings.length; i++){
     this.price += 1.25;
   }
-  for(i=0; i<this.meatToppings.length; i++){
+   for(i=0; i<this.meatToppings.length; i++){
     this.price += 2;
   }
-
+  if(this.pizzasize === "large"){
+    this.price += 3;
+  }
+  if(this.crusttype === "gluten-free"){
+     this.price += 3;
+   }
+   if(this.house === "specialty"){
+    this.price += 3;
+   }
+  return this.price;
+  this.price = 0
 }
 
 
 $(document).ready(function() {
-  var new Pizza(size, type, specialty);
+  var veggieToppings = [];
+  var meatToppings = [];
+  var house;
+  $(".house").click(function(){
+    house = $(".house").val();
+   });
+  $("form#create").submit(function(event){
+
+    event.preventDefault();
+    var pizzasize = $("#size").val();
+    var crusttype = $("#type").val();
+
+    $("input:checkbox[name=veggieToppings]:checked").each(function() {
+      veggieToppings.push($(this).val());
+    });
+    $("input:checkbox[name=meatToppings]:checked").each(function() {
+      meatToppings.push($(this).val());
+    });
+    var newPizza = new Pizza(pizzasize, crusttype, house, veggieToppings, meatToppings)
+    var orderTotal = newPizza.calculatePrice();
+
+    console.log(orderTotal);
+    veggieToppings = [];
+    meatToppings = [];
+  });
+
 });
